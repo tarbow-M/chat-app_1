@@ -3,6 +3,9 @@ class RoomsController < ApplicationController
     @room = Room.new
   end
 
+  def index
+  end
+
   def create
     # binding.pry
     @room = Room.new(room_params)
