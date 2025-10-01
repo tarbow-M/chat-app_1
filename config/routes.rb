@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # Userモデルに対してDeviseの全てのルーティングを定義する
   devise_for :users
   resources :users, only: [:edit, :update]
+  resources :rooms, only: [:new, :create]
 end
